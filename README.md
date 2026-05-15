@@ -20,30 +20,28 @@ OSPF process 1 is pre-configured on FRA-HQ only.
 
 \---
 
-## 🗺️ Topology Diagram
-
+🗺️ Topology Diagram
 ```
   172.31.0.0/24    172.32.0.0/24    172.33.0.0/24    172.34.0.0/24
-  \\\\\\\[BCN-R1 LAN]     \\\\\\\[DXB-R2 LAN]     \\\\\\\[NYC-R3 LAN]     \\\\\\\[SGP-R4 LAN]
+  \[BCN-R1 LAN]     \[DXB-R2 LAN]     \[NYC-R3 LAN]     \[SGP-R4 LAN]
        |                |                |                |
     Eth0/1           Eth0/1           Eth0/1           Eth0/1
-   \\\\\\\[BCN-R1]         \\\\\\\[DXB-R2]         \\\\\\\[NYC-R3]         \\\\\\\[SGP-R4]
+   \[BCN-R1]         \[DXB-R2]         \[NYC-R3]         \[SGP-R4]
  T:10.77.0.21     T:10.77.0.22     T:10.77.0.23     T:10.77.0.24
     Eth0/0           Eth0/0           Eth0/0           Eth0/0
    10.10.0.21       10.10.0.22       10.10.0.23       10.10.0.24
-       \\\\\\\\               |               |               /
-        \\\\\\\\              |               |              /
-         \\\\\\\\             |               |             /
-          +----------\\\\\\\[SW1 — ISP Simulated]----------+
+       \\               |               |               /
+        \\              |               |              /
+         \\             |               |             /
+          +----------\[SW1 — ISP Simulated]----------+
                               |
                           10.10.0.1
                           Eth0/0
-                         \\\\\\\[FRA-HQ]
+                         \[FRA-HQ]
                         T:10.77.0.1
                           Eth0/1
                       172.30.0.0/24
-                      \\\\\\\[FRA-HQ LAN]
-```
+                      \[FRA-HQ LAN]```
 
 \---
 

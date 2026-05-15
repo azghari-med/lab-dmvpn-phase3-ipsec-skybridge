@@ -41,7 +41,7 @@ OSPF process 1 is pre-configured on FRA-HQ only.
                         T:10.77.0.1
                           Eth0/1
                       172.30.0.0/24
-                      \[FRA-HQ LAN]```
+                      \[FRA-HQ LAN]
 
 \---
 

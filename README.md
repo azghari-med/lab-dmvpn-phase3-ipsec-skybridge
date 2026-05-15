@@ -174,10 +174,7 @@ crypto ipsec profile SKYBRIDGE-IPSEC
 ```
 interface Tunnel0
  ip address 10.77.0.1 255.255.255.0
-
-\\\&#x20;ip nhrp holdtime 300 
-
-
+ ip nhrp holdtime 300 
  ip nhrp authentication sky@b
  ip nhrp network-id 300
  ip mtu 1400
@@ -207,8 +204,7 @@ interface Tunnel0
  ip mtu 1400
  ip tcp adjust-mss 1360
  ip nhrp authentication sky@b
-
-\\\&#x20;ip nhrp network-id 300
+ ip nhrp network-id 300
  ip nhrp holdtime 300
  ip nhrp nhs 10.77.0.1
  ip nhrp map 10.77.0.1 10.10.0.1
